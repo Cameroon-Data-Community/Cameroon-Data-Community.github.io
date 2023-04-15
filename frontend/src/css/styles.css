@@ -69,6 +69,13 @@
  #aboutpage{
   min-height: 100vh !important;
   overflow: hidden !important;
+ }
+ #evtpage{
+  min-height: 100vh !important;
+ }
+ .evt-img{
+  max-width: 250px;
+  max-height: 250px;
  } 
  #aboutpage p{
   text-align: justify;
@@ -82,7 +89,7 @@
   
   
   
- #aboutpage .navbar,#page-404 .navbar {
+ #aboutpage .navbar,#page-404 .navbar, #evtpage .navbar,#page-404 .navbar {
   background:rgba(41, 33, 33, 0.9) !important;
     width: 100%;
     display: block;

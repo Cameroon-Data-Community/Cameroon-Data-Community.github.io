@@ -14,7 +14,7 @@ export default function NavMenu() {
           <Nav className="  mx-auto">
             <Nav.Link href="/" className="px-md-5">Home</Nav.Link>
             <Nav.Link href="/about-us" className="px-md-5">About</Nav.Link>
-            <Nav.Link href="/" className="px-md-5">Events</Nav.Link>
+            <Nav.Link href="/events" className="px-md-5">Events</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

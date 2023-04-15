@@ -1,11 +1,14 @@
-import React from 'react'
-import { Col,Nav } from 'react-bootstrap'
-
+import React, { useEffect, useState } from 'react'
+import { Col,Nav, Row } from 'react-bootstrap'
+//import axios from 'axios'
 
 import NavMenu from "../components/navMenu";
-
+//import Event from '../components/event';
 
 export default function Home() {
+
+ const [events,setEvents] =useState()
+  
   return (
     <div   id='homepage' className='mx-auto'>       
         <div className='mx-auto' id='homepage-header'>
@@ -13,15 +16,7 @@ export default function Home() {
             <NavMenu/>
 
             <Col className='mx-auto px-2' id='header-col-1'>
-              {/*<div className='test'>
-              <p className=''>
-                Typed text 1
-              </p>
-              </div>*/}
-            
-  
-  
-
+             
               <h1 className='text-center typing-text fw-bold mt-3 d-none d-sm-block' >
               
                 Cameroon Data Community...
@@ -30,17 +25,7 @@ export default function Home() {
                   <p id='span1' className='  d-block mx-auto'>Cameroon Data</p>
                   <p id='span2' className='  d-block mx-auto'>Community</p>
                </div>
-               
-               {/*<div className=' d-md-none'>
-               <span id='span'>Cameroon Data</span>
-                <span id="span2" className='d-block d-md-inline'>Community...</span>
-               </div>
-              <p class="fs-1 xs-homepage-title d-sm-none text-center">
-                <span class="title-word title-word-1">Cameroon </span>
-                <span class="title-word title-word-2">Data </span>
-                <span class="title-word title-word-3">Community </span>
-                
-              </p>*/}
+                             
               <p className='text-center fs-4 mt-3'  >...Is volunteer-driven community of Cameroonian data professionals and enthusiasts.</p>
               <Col xs={5} className='d-md-none mx-auto'>
                 <span className='btn btn-signup d-block mx-auto mt-5 d-lg-none fs-2 rounded'>
@@ -67,9 +52,16 @@ export default function Home() {
 
           </div>
         </div>
-        <div className='my-2'>
+        {/*<div className='my-2'>
           <h2 className='text-center'>Our Events</h2>
-        </div>
+              <Row>
+                {events !== undefined &&(
+                  <Col xs={12} sm={11} md={6} lg={4} xl={3} className='mx-auto'>
+                    <Event title={events.name.text} url={events.url} date={events.start.local} src={events.logo.url}/>
+                  </Col>
+                )}
+              </Row>
+                </div>*/}
 
     </div>
   )
