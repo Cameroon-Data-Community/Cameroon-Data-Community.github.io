@@ -1,0 +1,22 @@
+{
+  "name": "cdc-backend",
+  "version": "1.0.0",
+  "description": "The backend Application for Cameroon Data Community",
+  "engines": {
+    "node": "16.x"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Cameroon Data Community",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.1",
+    "request": "^2.88.2"
+  }
+}
