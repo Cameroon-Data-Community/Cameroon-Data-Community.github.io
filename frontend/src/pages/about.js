@@ -71,7 +71,7 @@ export default function About() {
               </Col>
           </Row>
           <div className='text-center my-2  mx-auto d-block'>
-            <a href='https://docs.google.com/forms/d/e/1FAIpQLScXzr1c5AC_GR6ifbBsbqw45Nxy4HJ0AHlEXDtiziWbq_N3OQ/viewform' target='_blank' rel="noreferrer" className='text-white btn btn-primary'>Join us Now</a>
+            <a href='https://docs.google.com/forms/d/e/1FAIpQLScXzr1c5AC_GR6ifbBsbqw45Nxy4HJ0AHlEXDtiziWbq_N3OQ/viewform' target='_blank' rel="noreferrer" className='text-white btn btn-success'>Join us Now</a>
           </div>
         </div>
     </div>

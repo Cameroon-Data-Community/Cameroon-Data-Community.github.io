@@ -7,7 +7,7 @@
 }
 #homepage-header
     {
-    background-image: url('../../public/images/cdc-meetup-img-1.jpg');
+    background-image: url('../../public/images/cdc-meetup-img-1.jpg'); 
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh !important;
@@ -16,7 +16,8 @@
     
 }
 #header-main{
-    background-color: rgba(7, 1, 1, 0.6);
+    background-color: rgba(6, 7, 1, 0.8);
+    /* background-color: rgba(45, 48, 7, 0.6);*/
     width: 100vw;
     min-height: 100vh !important;
     max-width: 100%;
@@ -27,7 +28,8 @@
   
 }
 #homepage-header .navbar {
-    background:inherit;
+    /*background:inherit;*/
+    background: linear-gradient(90deg,#000000,#c89116);
     width: 100%;
     display: block;
     max-width: 100vw;
@@ -90,7 +92,8 @@
   
   
  #aboutpage .navbar,#page-404 .navbar, #evtpage .navbar,#page-404 .navbar {
-  background:rgba(41, 33, 33, 0.9) !important;
+  /*background:rgba(41, 33, 33, 0.9) !important;*/
+  background: linear-gradient(90deg,#000000,#c89116);
     width: 100%;
     display: block;
     max-width: 100vw;
@@ -145,7 +148,8 @@ footer{
   position:relative;
   bottom: 0px !important;
   border: 1px solid sienna;
-  background-color: rgba(41, 33, 33, 0.9);
+  /*background-color: rgba(41, 33, 33, 0.9);*/
+  background: linear-gradient(90deg,#000000,#c89116);
   color: white;
   overflow: hidden;
 }

@@ -15,9 +15,10 @@ export default function Events() {
     useEffect(()=>getEvents,[])
     const getEvents=()=>{
       setLoading(true)
-      axios.get('http://localhost:5000/')
+      axios.get('https://q8j9nomo58.execute-api.us-east-1.amazonaws.com/prod/cdc-backend') //http://localhost:5000/
       .then(resp=>{
-        setEvents(resp.data)
+        setEvents(resp.data.reverse())
+        console.log(resp.data);
 
       })
       .catch(e=>{
@@ -34,25 +35,26 @@ export default function Events() {
     <>
     <Helmet>
         <title>Cameroon Data Community - Events</title>
-        <meta name="description" content="Cameroon Data Community Upcomming Events" />
+        <meta name="description" content="Cameroon Data Community Events" />
     </Helmet>
     <div className='' id='evtpage'>
         <NavMenu/>
         <div className='mx-auto mt-md-3 mt-2 mh-100 '>
 
-          <h2 className='text-center'>Current and Upcomming Events</h2>
+          <h2 className='text-center'>Our Events</h2>
+
           
-          <Row>
+          <Row className='p-sm-2'>
                 {events.length>0 && events.map((evt,index)=>{
                     return (
                         <Col xs={12} sm={11} md={6} lg={4} xl={3} className='mx-auto' key={index}>
                         <Event title={evt.name} url={evt.link} date={evt.start} src={evt.logo}/>
                       </Col>
                     )
-                }
-                
+                }            
                  
                 )}
+                
                 {loading == true && (
                   <p  className='text-center fw-bold fs-4'>Loading Events...</p>
                 )}
