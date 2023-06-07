@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.ac0a4b71.css",
-    "main.js": "/static/js/main.4db2c3f0.js",
+    "main.js": "/static/js/main.89786891.js",
     "static/js/787.e6617322.chunk.js": "/static/js/787.e6617322.chunk.js",
     "static/media/cdc-meetup-img-1.jpg": "/static/media/cdc-meetup-img-1.d3c207413ee43e47d7c9.jpg",
     "index.html": "/index.html",
     "main.ac0a4b71.css.map": "/static/css/main.ac0a4b71.css.map",
-    "main.4db2c3f0.js.map": "/static/js/main.4db2c3f0.js.map",
+    "main.89786891.js.map": "/static/js/main.89786891.js.map",
     "787.e6617322.chunk.js.map": "/static/js/787.e6617322.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ac0a4b71.css",
-    "static/js/main.4db2c3f0.js"
+    "static/js/main.89786891.js"
   ]
 }
