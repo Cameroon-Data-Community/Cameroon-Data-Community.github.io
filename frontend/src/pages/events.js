@@ -12,7 +12,7 @@ export default function Events() {
     const [events,setEvents] =useState([])
     const [loading,setLoading]=useState(false)
     const [err,setErr]=useState(null)
-    useEffect(()=>getEvents,[])
+    useEffect(()=>getEvents(),[])
     const getEvents=()=>{
       setLoading(true)
       console.log('fetching events...');
