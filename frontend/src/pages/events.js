@@ -15,8 +15,8 @@ export default function Events() {
     useEffect(()=>getEvents(),[])
     const getEvents=()=>{
       setLoading(true)
-      console.log('fetching events...');
-      axios.get('https://q8j9nomo58.execute-api.us-east-1.amazonaws.com/prod/cdc-backend') //http://localhost:5000/
+      console.log('fetching events...');  //https://q8j9nomo58.execute-api.us-east-1.amazonaws.com/prod/cdc-backend
+      axios.get('https://cdc-backend.onrender.com/') //http://localhost:5000/
       .then(resp=>{
         setEvents(resp.data.reverse())
         console.log(resp.data);
