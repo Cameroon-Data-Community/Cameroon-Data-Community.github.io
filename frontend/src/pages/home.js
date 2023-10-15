@@ -10,7 +10,7 @@ export default function Home() {
  const [events,setEvents] =useState()
   
   return (
-    <div   id='homepage' className='mx-auto'>       
+    <div   id='homepage' className='mx-auto mt-0'>       
         <div className='mx-auto' id='homepage-header'>
           <div id='header-main'>
             <NavMenu/>
@@ -26,7 +26,7 @@ export default function Home() {
                   <p id='span2' className='  d-block mx-auto'>Community</p>
                </div>
                              
-              <p className='text-center fs-4 mt-3'  >...Is volunteer-driven community of Cameroonian data professionals and enthusiasts.</p>
+              <p className='text-center fs-4 mt-3'  >...A volunteer-driven community of Cameroonian data professionals and enthusiasts.</p>
               <Col xs={5} className='d-md-none mx-auto'>
                 <span className='btn btn-signup d-block mx-auto mt-5 d-lg-none fs-2 rounded'>
                   <a href="https://docs.google.com/forms/d/e/1FAIpQLScXzr1c5AC_GR6ifbBsbqw45Nxy4HJ0AHlEXDtiziWbq_N3OQ/viewform" target='_blank' rel="noreferrer">Join Us</a>

@@ -19,7 +19,7 @@ export default function Events() {
       axios.get('https://cdc-backend.onrender.com/') //http://localhost:5000/
       .then(resp=>{
         setEvents(resp.data.reverse())
-        console.log(resp.data);
+        //console.log(resp.data);
 
       })
       .catch(e=>{

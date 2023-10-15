@@ -2,8 +2,18 @@
   /*font-family:"Montserrat", sans-serif*/
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+#event-ribbon{
+  margin-bottom: 0px !important;
+  height: 110px;
+
+  
+}
+/* #event-ribbon p{
+  font-size: 20px !important;
+} */
 #homepage{
   min-height: 100vh;
+ 
   
 }
 #homepage-header
@@ -68,7 +78,33 @@
     
 
   }
-  
+  #annivpage-header{
+    background-image: url('../../public/images/ballons-612x612.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh !important;
+  }
+  #annivpage-header #header-col-1{
+    position: relative;
+    top: 3% !important;
+   /*  border: 3px solid red; */
+    height: auto;
+    
+    
+  }
+  #annivpage-header #header-col-1 p{
+    position: relative;
+    top: 1.5em;
+    color: #ffffff;
+  }
+  #annivpage-header #header-col-1 a{
+    position: relative;
+    top: 2em;
+  }
+  #anniv-page td{
+    color: #ffffff;
+    font-size: 18px;
+  }
  #aboutpage{
   min-height: 100vh !important;
   overflow: hidden !important;
@@ -196,6 +232,11 @@ a{
   animation: 
     typing 3.5s steps(40, end),
     blink-caret .75s step-end infinite;
+}
+#event-ribbon p{
+  position: relative;
+  top: 10px;
+  font-size: 20px !important;
 }
     
 }
